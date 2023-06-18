@@ -1,0 +1,25 @@
+import java.util.Date;
+
+public class GraduateStudent extends Student{
+	private String supervisor;
+	public GraduateStudent(String name, Date date, String studentID) {
+		super(name,date,studentID);
+	}
+
+	public void setThesisSupervisor(String supervisor) {
+		this.supervisor = supervisor;
+		
+	}
+
+	public String getThesisSupervisor() {
+		return this.supervisor;
+	}
+
+	@Override
+	public String toString() {
+		return "GraduateStudent\n"+ super.toString()+"Thesis Supervisor: " + this.supervisor ;
+	}
+	
+	
+	
+}

@@ -1,0 +1,20 @@
+package practice;
+import java.util.Scanner;
+
+public class practice {
+	
+	
+	public static void main(String[] args) {
+		int[] anArray;
+		anArray = new int[10];
+		for(int i=0;i<10;i++) {
+		Scanner myObj = new Scanner(System.in);
+		System.out.println("enter number");
+		
+		int no = myObj.nextInt();
+		anArray[i]=no;
+		
+	}
+		System.out.println(anArray);
+	}
+}

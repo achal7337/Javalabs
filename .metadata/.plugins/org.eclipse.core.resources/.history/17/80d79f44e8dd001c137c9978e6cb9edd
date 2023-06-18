@@ -1,0 +1,33 @@
+package practice;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class practice {
+	
+	
+	public static void main(String[] args) {
+		int[] anArray;
+		int[] revArr;
+		anArray = new int[5];
+		revArr = new int[anArray.length];
+		for(int i=0;i<anArray.length;i++) {
+		Scanner myObj = new Scanner(System.in);
+		System.out.println("enter number:");
+		
+		int no = myObj.nextInt();
+		anArray[i]=no;
+		
+		
+	}
+		int K = 0;
+		for (int j = anArray.length;j>=0;j--) {
+			int no1 = anArray[j];
+			revArr[K]= no1;
+			K++;
+		}
+			System.out.println(Arrays.toString(anArray));
+			System.out.println(Arrays.toString(revArr));
+		
+	
+	}
+}

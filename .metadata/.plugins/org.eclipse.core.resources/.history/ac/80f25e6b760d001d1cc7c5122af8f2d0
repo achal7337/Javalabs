@@ -1,0 +1,16 @@
+import java.util.Date;
+
+public class SalariedEmployee extends Employee {
+	public int salary;
+	public SalariedEmployee(String name, Date date, String employeeNo) {
+		super(name,date,employeeNo);
+		
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+		
+	}
+	
+	
+}

@@ -1,0 +1,12 @@
+import java.util.Date;
+
+public class Employee extends Person {
+	private String employeeNo;
+	public Employee(String name, Date date, String employyeNo) {
+		super(name, date);
+		this.employeeNo = employeeNo;
+		
+	}
+	
+	
+}

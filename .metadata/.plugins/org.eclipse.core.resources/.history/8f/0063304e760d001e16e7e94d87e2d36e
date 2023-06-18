@@ -1,0 +1,84 @@
+package a1;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class UndirectedGraph<T extends Comparable<T>> extends Graph<T> {
+
+	private Map<T, Set<T>> graph;
+	// the following class variable will be used by
+	// UndiretedGraphAlgorithms class
+	private Map<T, Boolean> visited;
+	
+	public UndirectedGraph() {
+		this.graph = new HashMap<>();
+		this.visited = new HashMap<>();
+	}
+	
+	public boolean isEmpty() {
+		// TASK 1: Complete this method
+		// Hint: An empty graph contains zero vertices
+	}
+
+	public int getSize() {
+		// TASK 2: compute the size (number of vertices)
+	}
+	
+	public void addVertex(T vertex) throws VertexExistsException {
+		// TASK 3: Complete this method
+		// Hint: A new vertex is by default not visited.
+
+	}
+	
+	public List<T> getAdjacent(T vertex) {
+		return new ArrayList<>(graph.get(vertex));
+	}
+
+	public void addEdge(T fromVertex, T toVertex) {
+		// TASK 4: Complete this method
+		// Hint: Recall, both vertices already exist. Also,
+		//       our graphs are not oriented, hence both edges
+		//       need to be added.
+	}
+	
+	@Override
+	public void reset() {
+		// TASK 5: This method resets values
+		// of visited map to false
+	}
+
+	@Override
+	public String toString() {
+		// TASK 6: Override toString() method
+		// note: for an empty graph, just return an empty string.
+
+		// NOTE: as of Jun 12, 2023, the implementation of this method is no longer a requirement.
+		// It won't be graded.
+		// however, you can still implement it (perhaps return set of vertices and edges)
+		// as a way to self-validate your work
+	}
+
+	@Override
+	public List<T> getVertices() {
+		return graph.keySet().stream()
+                .collect(Collectors.toList());
+	}
+
+	@Override
+	public List<T> getVisited() {
+		// TASK 7-0: code this method
+	}
+
+	@Override
+	public void setVisited(T vertex) {
+		// TASK 7-1: code this method
+		// you may assume vertex T exists in the graph
+		
+	}
+
+}

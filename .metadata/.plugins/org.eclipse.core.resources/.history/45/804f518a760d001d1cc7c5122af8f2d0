@@ -1,0 +1,30 @@
+import java.util.Date;
+
+public class Person {
+
+	public final String name;
+	private Date date;
+
+	
+
+	public Person(String name, Date date) {
+		this.name =  name;
+		this.date =(Date) date.clone();
+	}
+	
+	
+	
+	public Date getDob() {
+		
+		return (Date) date.clone() ;
+	}
+
+	@Override
+	public String toString() {
+		return "Name"+this.name + "\nDOB:"+ this.date +" \n";
+	}
+	
+	
+
+
+}

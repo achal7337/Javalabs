@@ -1,0 +1,30 @@
+import java.util.Date;
+
+public class Person {
+
+	private String name;
+	private String dob;
+
+	public void person(String name, String dob) {
+		this.name =  name;
+		this.dob = dob;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+
+	public String getDob() {
+		return dob;
+	}
+
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+	
+
+}

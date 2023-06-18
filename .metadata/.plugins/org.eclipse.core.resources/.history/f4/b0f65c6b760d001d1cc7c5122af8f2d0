@@ -1,0 +1,12 @@
+import java.util.Date;
+
+public class HourlyEmployee extends Employee {
+	public int wage;
+	public HourlyEmployee(String name, Date date, String employeeNo) {
+		super(name,date,employeeNo);
+		
+	}
+	
+	
+	
+}

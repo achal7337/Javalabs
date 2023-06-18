@@ -1,0 +1,32 @@
+package practice;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class practice {
+	
+	
+	public static void main(String[] args) {
+		int[] anArray;
+		int sum=0;
+		int prod = 0;
+		anArray = new int[5];
+		
+		for(int i=0;i<anArray.length;i++) {
+		Scanner myObj = new Scanner(System.in);
+		System.out.println("enter number:");
+		
+		int no = myObj.nextInt();
+		anArray[i]=no;
+		
+		
+	}
+		for(int i = 0;i<anArray.length;i++) {
+			sum += anArray[i];
+			prod *= anArray[i];
+		}
+		
+		System.out.println("sum: "+sum+" prod: "+prod);
+				
+	
+	}
+}

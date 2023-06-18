@@ -1,0 +1,21 @@
+package practice;
+import java.util.Scanner;
+
+public class practice {
+	
+	
+	public static void main(String[] args) {
+		int[] anArray;
+		anArray = new int[3];
+		for(int i=0;i<anArray.length;i++) {
+		Scanner myObj = new Scanner(System.in);
+		System.out.println("enter number:");
+		
+		int no = myObj.nextInt();
+		anArray[i]=no;
+		
+	}
+		for (int j =0;j<anArray.length;j++)
+		System.out.println("value of array number "+j+", "+anArray[j]);
+	}
+}
