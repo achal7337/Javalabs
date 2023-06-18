@@ -73,7 +73,7 @@ public class UndirectedGraph<T extends Comparable<T>> extends Graph<T> {
 		// It won't be graded.
 		// however, you can still implement it (perhaps return set of vertices and edges)
 		// as a way to self-validate your work
-		/*StringBuilder builder = new StringBuilder();
+		StringBuilder builder = new StringBuilder();
 		 
         for (T v : graph.keySet()) {
             builder.append(v.toString() + ": ");
@@ -84,7 +84,6 @@ public class UndirectedGraph<T extends Comparable<T>> extends Graph<T> {
         }
  
         return (builder.toString());
-        */
 	}
 
 	@Override
